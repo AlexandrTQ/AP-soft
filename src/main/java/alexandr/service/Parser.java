@@ -12,7 +12,7 @@ public class Parser {
         List<Chapter> chapters = Arrays.stream(input).filter(s -> s.matches("#.+"))
                 .map(i -> new Chapter(getNesting(i), i))
                 .collect(Collectors.toList());
-        Chapter mainStructure = new Chapter(0, "Structure");
+        Chapter mainStructure = new Chapter(0, "Book1");
         Chapter currentChapter = mainStructure;
 
         for (int i = 0; i < chapters.size(); i++) {

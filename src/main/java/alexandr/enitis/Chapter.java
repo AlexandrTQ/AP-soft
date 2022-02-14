@@ -8,10 +8,10 @@ import java.util.List;
 @Getter
 @Setter
 public class Chapter {
+    private final String text;
     private List<Chapter> chapters = new ArrayList<>();
     @JsonIgnore
     private final int level;
-    private final String text;
     @JsonIgnore
     private Chapter prev;
 
